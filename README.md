@@ -114,22 +114,6 @@
 | m               |     x| |Relative (PC=PC+2+offset)          |
 | [m]             |     R| |Relative indirect (ditto)          |
 
-|~                         |Description                        |
-|--------------------------|-----------------------------------|
-| a                        |Acc A or B (a=A,Op=BXH, a=B,Op=FXH)|
-| d  s  EA                 |Destination/source/effective addr. |
-| i  p  r                  |Regs X,Y/regs X,Y,S,U/any register |
-| m                        |Relative address (-126 to +129)    |
-| n  nn                    |8/16-bit expression(0 to 255/65535)|
-| xx  p!                   |A,B,D,nn/p+,-p,p++,--p (indexed)   |
-| +  -  *  /               |Add/subtract/multiply/divide       |
-| &  ~  v  x               |AND/NOT/inclusive OR/exclusive OR  |
-| <-  ->  <->              |Rotate left/rotate right/exchange  |
-| [ ]  [ ]+  -[ ]          |Indirect address/increment/decr.   |
-| { }                      |Combination of operands            |
-| {regs}                   |If E {PC,U/S,Y,X,DP,B,A,CC}/{PC,CC}|
-| (10H)  (11H)             |Hex opcode to precede main opcode  |
-
 ## Condition Code Register
 
 |Bit       |      |Description                        |
@@ -145,6 +129,22 @@
 
 
 ## Instructions
+
+|~                         |Description                        |
+|--------------------------|-----------------------------------|
+| a                        |Acc A or B (a=A,Op=BXH, a=B,Op=FXH)|
+| d  s  EA                 |Destination/source/effective addr. |
+| i  p  r                  |Regs X,Y/regs X,Y,S,U/any register |
+| m                        |Relative address (-126 to +129)    |
+| n  nn                    |8/16-bit expression(0 to 255/65535)|
+| xx  p!                   |A,B,D,nn/p+,-p,p++,--p (indexed)   |
+| +  -  *  /               |Add/subtract/multiply/divide       |
+| &  ~  v  x               |AND/NOT/inclusive OR/exclusive OR  |
+| <-  ->  <->              |Rotate left/rotate right/exchange  |
+| [ ]  [ ]+  -[ ]          |Indirect address/increment/decr.   |
+| { }                      |Combination of operands            |
+| {regs}                   |If E {PC,U/S,Y,X,DP,B,A,CC}/{PC,CC}|
+| (10H)  (11H)             |Hex opcode to precede main opcode  |
 
 |Mnemon.|Op|IHNZVC|IEXD#R|~|Description           |Notes       |
 |-------|--|------|------|-|----------------------|------------|
