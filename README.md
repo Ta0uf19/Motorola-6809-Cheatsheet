@@ -129,7 +129,7 @@
 
 
 ## Instructions
-
+### Legend
 |~                         |Description                        |
 |--------------------------|-----------------------------------|
 | a                        |Acc A or B (a=A,Op=BXH, a=B,Op=FXH)|
@@ -145,7 +145,7 @@
 | { }                      |Combination of operands            |
 | {regs}                   |If E {PC,U/S,Y,X,DP,B,A,CC}/{PC,CC}|
 | (10H)  (11H)             |Hex opcode to precede main opcode  |
-
+----------------------------------------------------------------
 |Mnemon.|Op|IHNZVC|IEXD#R|~|Description           |Notes       |
 |-------|--|------|------|-|----------------------|------------|
 |ABX    |3A|------|X     |3|Add to Index Register |X=X+B       |
